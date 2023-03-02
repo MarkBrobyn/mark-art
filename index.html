@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Mark Brobyn - Art</title>
+  <meta name="viewport" content="width = device-width, initial-scale = 1.0">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="" media="print" />
+  
+  <!-- PhotoSwipe -->
+	<!-- Core CSS file -->
+	<link rel="stylesheet" href="ps/photoswipe.css"> 
+
+	<!-- Skin CSS file (styling of UI - buttons, caption, etc.)
+		 In the folder of skin CSS file there are also:
+		 - .png and .svg icons sprite, 
+		 - preloader.gif (for browsers that do not support CSS animations) -->
+	<link rel="stylesheet" href="ps/default-skin/default-skin.css"> 
+
+	<!-- Core JS file -->
+	<script src="ps/photoswipe.min.js"></script> 
+
+	<!-- UI JS file -->
+	<script src="ps/photoswipe-ui-default.min.js"></script> 
+  <!-- END PhotoSwipe -->
+  
+  
+  <script type="text/javascript" src=""></script>
+
+  <script type="text/javascript">
+
+  </script>
+ </head>
+
+ <body onload="";>
+
+ <!-- HEADER -->
+ <header class="opaque" ><h1>&nbsp;</h1></header>
+ <header class="stb"><h1><a href="index.html">Mark Brobyn</a></h1></header>
+ <h1>&nbsp;</h1>
+ <!-- END HEADER -->
+ 
+ <main class="center">
+ <h2>Art work examples</h2>
+ <div class="gallery" onclick="openPhotoSwipe(items1)">
+ Drawings and paintings
+ <br><img width="162px" height="216px" src="04-IMG_20170512_202446.jpg">
+ <br>(Rather hastily photographed)
+ </div>
+
+ 
+
+
+ </main>
+ <!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                <!--  Controls are self-explanatory. Order can be changed. -->
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+ <!-- FOOTER -->
+
+ <!-- END FOOTER -->
+
+  <script type="text/javascript">
+	var pswpElement = document.querySelectorAll('.pswp')[0];
+
+	// build items array
+	var items1 = [
+		{
+			src: '01-IMG_20170512_202313.jpg',
+			w: 864,
+			h: 648,
+			title: 'Girl with Bear, pencil on cartridge paper, 22" x 16"'
+		},
+		{
+			src: '02-IMG_20170512_202358.jpg',
+			w: 864,
+			h: 648,
+			title: 'Girl with Bear, pencil on cartridge paper, detail'
+		},
+		{
+			src: '03-IMG_20170512_202439.jpg',
+			w: 648,
+			h: 864,
+			title: 'Girl with Bear, pencil on cartridge paper, detail'
+		},
+	    {
+			src: '04-IMG_20170512_202446.jpg',
+			w: 648,
+			h: 864,
+			title: 'Girl with Bear, pencil on cartridge paper, detail'
+		},
+		{
+			src: '05-IMG_1808.jpg',
+			w: 864,
+			h: 648,
+			title: 'Lizzy, pencil on cartridge paper, 22" x 16"'
+		},
+		{
+			src: '06-IMG_20170512_195325.jpg',
+			w: 864,
+			h: 648,
+			title: 'Young Woman, pencil on cartridge paper, 22" x 16", unfinished'
+		},
+		{
+			src: '07-IMG_20170512_195450.jpg',
+			w: 864,
+			h: 648,
+			title: 'Lizzy and Sarah, pencil on cartridge paper, 22" x 16", unfinished'
+		},
+		{
+			src: '08-IMG_20170512_195205.jpg',
+			w: 648,
+			h: 864,
+			title: 'Android, pencil on cartridge paper, 22" x 16", unfinished'
+		},
+	    {
+			src: '09-IMG_20170512_195140.jpg',
+			w: 864,
+			h: 648,
+			title: 'Laser Hand, ink on cartridge paper, 11" x 8"'
+		},
+		{
+			src: '10-IMG_5282.jpg',
+			w: 864,
+			h: 648,
+			title: 'Alexandra Palace Boating Lake, oil on board, 26" x 14"'
+		},
+		{
+			src: '11-IMG_4435.jpg',
+			w: 864,
+			h: 648,
+			title: 'Copper Kettle with Red Mug, oil on board, 14" x 10"'
+		}
+	];
+
+
+
+	// define options (if needed)
+	var options = {
+		// optionName: 'option value'
+		// for example:
+		index: 0 // start at first slide
+	};
+
+	// Initializes and opens PhotoSwipe
+	function openPhotoSwipe(items) {
+	var gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
+	gallery.init();
+	}
+
+
+// document.getElementById('btn').onclick = openPhotoSwipe;
+  </script>
+ </body>
+</html>
